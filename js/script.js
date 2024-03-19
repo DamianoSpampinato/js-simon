@@ -1,5 +1,5 @@
 const randomNumberArray = [];
-const inputArray=[];
+const correctInputArray=[];
 let userNumber;
 let  randomNumber = 0;
 let points=0;
@@ -20,7 +20,7 @@ setTimeout(removeNumbers, 30000);
 for(let i = 0; i<5; i++ ){
     setTimeout(inputDelayed, 30500);
 }
-setTimeout(function(){alert('hai fatto ' + points)}, 30700);
+setTimeout(function(){alert('hai fatto ' + points + ' i numeri corretti sono: ' + inputArray)}, 30700);
 
 function removeNumbers(){
     myDiv.innerHTML= ('');
@@ -29,7 +29,7 @@ function inputDelayed (){
     userNumber = parseInt(prompt('inserisci il numero'));
     if (randomNumberArray.includes(userNumber)){
         points++
+        correctInputArray.push(userNumber);
     
     }
 }
-console.log(inputArray);
