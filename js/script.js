@@ -15,12 +15,12 @@ myDiv.innerHTML= (randomNumberArray);
 console.log(randomNumberArray);
 indexContainer.append(myDiv);
 
-setTimeout(removeNumbers, 3000);
+setTimeout(removeNumbers, 30000);
 
 for(let i = 0; i<5; i++ ){
-    setTimeout(inputDelayed, 3100);
+    setTimeout(inputDelayed, 30500);
 }
-setTimeout(function(){alert('hai fatto ' + points)}, 4000)
+setTimeout(function(){alert('hai fatto ' + points)}, 30700);
 
 function removeNumbers(){
     myDiv.innerHTML= ('');
